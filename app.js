@@ -1,1 +1,33 @@
-const ex=['Liegestütze','Rudern mit Band','Kniebeugen','Plank'];let i=0,c=0,t=30,h=new Date().getHours();greet.textContent=(h<12?'Guten Morgen':h<18?'Guten Tag':'Guten Abend')+' Thomas';function show(){exercise.textContent=ex[i]}show();next.onclick=()=>{i=(i+1)%ex.length;show()};prev.onclick=()=>{i=(i-1+ex.length)%ex.length;show()};done.onclick=()=>{c++;count.textContent=c};startTimer.onclick=()=>{let x=t;timer.textContent=x+' s';const iv=setInterval(()=>{x--;timer.textContent=x+' s';if(x<=0){clearInterval(iv);timer.textContent='Pause beendet';}},1000)};
+// Coach85 1.0 - app.js
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  console.log("Coach85 1.0 gestartet");
+
+  // Training-Button
+  const start = document.getElementById("startTraining");
+  if(start){
+    start.addEventListener("click", () => {
+      alert("Das Trainingsmodul wird in Modul 2 aktiviert.");
+    });
+  }
+
+  // Navigation vorbereiten
+  document.querySelectorAll("#bottomNavigation button")
+    .forEach(btn => {
+      btn.addEventListener("click", () => {
+        document
+          .querySelectorAll("#bottomNavigation button")
+          .forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      });
+    });
+
+  // Service Worker registrieren (wenn vorhanden)
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("sw.js")
+      .catch(err => console.log("Service Worker noch nicht verfügbar:", err));
+  }
+
+});
