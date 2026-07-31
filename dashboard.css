@@ -1,1 +1,1 @@
-#heroCard{background:linear-gradient(135deg,#2563eb,#3b82f6)}
+.heroCard{transition:.25s}.heroCard:hover{transform:translateY(-3px)}.card{transition:.2s}.card:hover{background:#26324d}.fade{animation:f .4s}@keyframes f{from{opacity:0}to{opacity:1}}
