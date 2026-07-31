@@ -1,1 +1,1 @@
-document.getElementById('startTraining').onclick=()=>alert('Trainingssystem wird in Update02 Phase2 erweitert.');
+console.log('updated app');
