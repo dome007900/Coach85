@@ -1,0 +1,1 @@
+.hero,.card{backdrop-filter:blur(18px)}.card{transition:.25s}.card:hover{transform:translateY(-4px);background:#22304b}@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}.card{animation:fade .4s}

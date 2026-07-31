@@ -1,9 +1,1 @@
-document.addEventListener('DOMContentLoaded',()=>{
- const start=document.getElementById('startTraining');
- if(start){
-   start.onclick=()=>{
-     document.getElementById('trainingPanel').style.display='block';
-     start.scrollIntoView({behavior:'smooth'});
-   }
- }
-});
+document.getElementById('startTraining').onclick=()=>alert('Trainingssystem wird in Update02 Phase2 erweitert.');
