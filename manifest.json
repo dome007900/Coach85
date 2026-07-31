@@ -1,1 +1,11 @@
-{"name":"Coach85","short_name":"Coach85","display":"standalone","start_url":"./","background_color":"#0f1115","theme_color":"#4f8cff"}
+{
+  "name":"Coach85",
+  "short_name":"Coach85",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#0b1020",
+  "theme_color":"#3b82f6",
+  "orientation":"portrait",
+  "description":"Dein persönlicher Fitness Coach",
+  "icons":[]
+}
