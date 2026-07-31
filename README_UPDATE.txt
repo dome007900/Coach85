@@ -1,17 +1,16 @@
-Phase 2:
-- training.css einbinden
-- training.js unter app.js einbinden
-- In index.html folgenden Block ergänzen:
 
-<section id="trainingPanel">
-<h2 id="exerciseName"></h2>
-<p id="exerciseInfo"></p>
-<div class="trainingButtons">
-<button id="prevExercise">◀</button>
-<button id="finishSet">Satz fertig</button>
-<button id="nextExercise">▶</button>
+Phase 3
+
+1. progress.css in index.html einbinden.
+2. progress.js nach training.js einbinden.
+
+Dashboard ergänzen:
+
+<div id="progressFill">0%</div>
+
+<div class="progressGrid">
+<div class="progressCard">Gewicht<br><strong id="weightValue"></strong></div>
+<div class="progressCard">Bauchumfang<br><strong id="waistValue"></strong></div>
+<div class="progressCard">Erledigte Sätze<br><strong id="setsValue"></strong></div>
+<div class="progressCard">Ziel<br><strong id="goalValue"></strong></div>
 </div>
-<p>Erledigte Saetze: <span id="setsDone">0</span></p>
-<div id="pauseTimer">30 s</div>
-<button id="pause30">Pause starten</button>
-</section>
