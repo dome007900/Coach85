@@ -1,0 +1,4 @@
+#trainingPanel{display:none;margin-top:20px;background:#1b2335;border-radius:20px;padding:18px}
+.trainingButtons{display:flex;gap:10px;flex-wrap:wrap}
+.trainingButtons button{padding:12px 16px;border:none;border-radius:12px}
+#pauseTimer{font-size:2rem;font-weight:bold;margin:12px 0}

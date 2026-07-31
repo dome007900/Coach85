@@ -1,1 +1,9 @@
-document.getElementById('start').onclick=()=>alert('Trainingsmodus folgt in Phase 2');
+document.addEventListener('DOMContentLoaded',()=>{
+ const start=document.getElementById('startTraining');
+ if(start){
+   start.onclick=()=>{
+     document.getElementById('trainingPanel').style.display='block';
+     start.scrollIntoView({behavior:'smooth'});
+   }
+ }
+});
