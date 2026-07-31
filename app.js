@@ -1,1 +1,1 @@
-startTraining.onclick=()=>alert('Trainingsmodul folgt in Modul 2');
+startTraining.onclick=()=>alert('Training gestartet!');
